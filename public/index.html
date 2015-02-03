@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Game</title>
+		<style>
+			body {
+				background-color: black;
+			}
+			#gameCanvas {
+				background-color: black;
+				width: 640px;
+				height: 360px;
+				margin: auto;
+				align: center;
+			}
+			#scoreboard {
+				text-align: center;
+				font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+				color: white;
+			}
+			#scores {
+				font-size:600%; 
+				padding:0; 
+				margin:0;
+				color: white;
+				position: absolute;
+			}
+			#title {
+				background-color: white;
+				color: black;
+			}
+		</style>
+	</head>
+	<body onload='setup();'>
+		<div id="ThreeJS" style="position: absolute; left:0px; top:0px"></div>
+		<script src='./Scripts/three.min.js'></script>
+		<script src='./Scripts/keyboard.js'></script>
+		<script src='./Scripts/socket.io.js'></script>
+		<script src="./Scripts/THREEx.FullScreen.js"></script>
+		<script src="./Scripts/THREEx.KeyboardState.js"></script>
+		<script src="./Scripts/THREEx.WindowResize.js"></script>
+		<script src="./Scripts/THREEx.DOMEvents.js"></script>
+		<script src='./Scripts/Detector.js'></script>
+		<script src='./Scripts/game.js'></script>
+		<script src="./fonts/helvetiker_regular.typeface.js"></script>
+		<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+		
+	</body>
+</html>
